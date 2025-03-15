@@ -5,3 +5,8 @@ body, html {
   overflow: scroll; 
   overflow-x: hidden; /* Esconde o scroll horizontal */
 }
+
+
+.container {
+  max-width: 400px;       /* Largura padrão de um smartphone */
+}
