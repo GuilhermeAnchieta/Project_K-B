@@ -1,0 +1,172 @@
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  height: 100%;
+  background-color: rgb(29, 29, 29);
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px; /* Ajuste conforme necessário */
+  margin: auto;
+  padding-bottom: 25px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.heart {
+  width: 10%;
+  text-align: center;
+}
+
+.text {
+  width: 80%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.swiper {
+  width: 95%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin: 20px 0;
+  color: white;
+}
+
+.counter {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+
+ 
+}
+
+#time{
+  margin-top: -23px;
+}
+
+.player-container {
+
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+
+}
+
+
+button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+  margin: 0 20px; /* Apenas espaçamento lateral */  
+  
+
+   
+  .img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: #ddd;
+}
+
+button:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+ 
+
+
+  
+
+.progress-bar {
+  width: 100%;
+  appearance: none;
+  height: 6px;
+  background: rgb(253, 253, 253)fff;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Estilizando o "thumb" da barra (a bolinha que desliza) */
+.progress-bar::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: red; /* Cor personalizada da bolinha */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.progress-bar::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: red; /* Cor personalizada da bolinha */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* audio {
+  width: 100%; 
+  max-width: 300px;
+  margin-top: 20px;
+  background-color: #f0f0f0;  
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #f0f0f0; 
+  border-radius: 10px; 
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: rgba(248, 50, 47, 0.836);
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: #333;
+  font-size: 14px; 
+} */

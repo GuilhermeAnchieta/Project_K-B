@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="titulo">
+    <span class="heart">❤️</span>
+    <span class="text">Nosso contador de tempo juntos</span>
+    <span class="heart">❤️</span>
+</div>
+
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="assets/foto1.jpeg" alt="Foto 1"></div>
+      <div class="swiper-slide"><img src="assets/foto2.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="assets/foto3.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="assets/foto4.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="assets/foto5.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="assets/foto6.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="assets/foto7.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="assets/foto8.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="assets/foto9.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="assets/foto10.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="assets/foto11.jpeg" alt=""></div>
+    </div>
+  </div>
+
+  <p class="subtitle">Porque você merece cada gesto, cada palavra e cada prova de carinho que eu puder te oferecer. Obrigada por existir, por ser quem você é, por iluminar minha vida de um jeito que só você sabe.</p>
+
+  <!-- Contador de tempo -->
+  <div class="counter">
+    <p> ESTAMOS JUNTOS A</p>
+    <p id="time">{{ timeElapsed }}</p>
+  </div>
+
+  <!-- Player de música -->
+  <div class="player-container">
+
+    <button (click)="playSound()" [disabled]="isPlaying"><img class="img "src="assets/play.png"></button>
+    <button (click)="pauseSound()" [disabled]="!isPlaying"><img class="img "src="assets/pausa.png"></button>
+    <button (click)="stopSound()"><img class="img "src="assets/seta.png"></button>
+  
+    <!-- Barra de Progresso -->
+    <input type="range" 
+           [max]="duration" 
+           [value]="currentTime" 
+           (input)="seek($event)" 
+           class="progress-bar">
+  
+    <!-- Tempo Atual -->
+    <!-- <p>{{ currentTime | number:'1.0-0' }}s / {{ duration | number:'1.0-0' }}s</p> -->
+  </div>
+</div>
